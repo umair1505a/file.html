@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 400px;
+}
+
+form:hover{
+  background-color: black;
+  transition: 0.7s;
+  color: white;
+}
+form fieldset:hover{
+  background: url("C:/Users/user/Downloads/320.png");
+  transition: 1.0s;
+  /* background-repeat: no-repeat; */
+}
+body form{
+  transform: translate(620px, 0);
+}
+form legend{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <form action="method" >
+        <fieldset>
+          <legend>Full-detial</legend>
+        <lebel><p>User-name: <input type="text" size="15" maxlength="30px" placeholder="Your name..." required="required"/></p></lebel>
+        <lebel><p>Password: <input type="password" size="15" minlength="8px" placeholder="Your password..." required/></p></lebel>
+        <leble><p>Email: <input type="email" size="20" maxlength="30px" placeholder="Your email..." required/></p></leble>
+        <lebel><p>Mobile -number: <input type="number" placeholder="Your number..." required/></p></lebel>
+        <lebel><p>Address: <input type="address"/></p></lebel>
+        <lebel><p>Comment: <textarea type="button" value="Submit" size="15" placeholder="Your comment for any quiry..." maxlength="50px" required></textarea></p></lebel>
+         <br>
+        Rock*<input type="radio" name="genre" value="rock" checked/>
+        Pop *<input type="radio" name="genre" value="rock" /></p>
+        <p>Please select your favoirte lsiten platform:
+          <br>
+          <input type="checkbox" name="genre" />Google-play
+          <input type="checkbox" name="genre" />Itnues
+          <input type="checkbox" name="genre" />spotify
+          <input type="checkbox" name="genre" />t-serires
+        </p>
+        <p>Which device wouold you like to use to listen music?
+          <br>
+          <select name="devices" class="devices">
+            <option>Mobile</option>
+            <option>Desktop/Laptop</option>
+            <option>Mutlimedia-device</option>
+          </select>
+        </p>
+        <p>
+          <input type="file" name="user-song" />
+          <br>
+          <p>Button: <input type="button" value="Submit" size="15" maxlength="30px" required/></p>
+        </p>
+      </fieldset>
+      <br>
+    </form>
+</body>
+</html>
